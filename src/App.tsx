@@ -1,7 +1,10 @@
 import './App.css'
-import { apiPath } from './service/constants'
+import { portNumber } from './service/constants'
+
 
 function App() {
+
+  const  apiPath=`http://${window.location.pathname}:${portNumber}`
   const sounrce = `${apiPath}/video`
   return (
     <>
