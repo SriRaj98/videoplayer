@@ -1,0 +1,48 @@
+@import '../../styles/variables/variables';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  z-index: 999;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent);
+  transition: background-color 0.3s;
+
+  &.black {
+    background-color: #000;
+  }
+
+  &__contents {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    height: 25px;
+    cursor: pointer;
+    
+    img {
+      height: 100%;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 20px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #b3b3b3;
+      }
+    }
+  }
+}
